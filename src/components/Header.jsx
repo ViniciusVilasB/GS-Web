@@ -14,7 +14,7 @@ export default function Header(){
       ];
 
     return(
-        <header className="flex w-full bg-black text-white font-semibold justify-between items-center h-16 p-6
+        <header className="flex w-full bg-minha-cor-1 text-white font-semibold justify-between items-center h-16 p-6
             transition-all duration-200 ease-in-out">
 
             <div className="flex items-center">
@@ -26,7 +26,7 @@ export default function Header(){
             </div>
 
             <nav className={`absolute top-16 left-0 p-4 transition-all duration-200 ease-in-out md:static md:flex md:gap-6
-                ${isMenuOpen ? 'block w-full bg-black': 'hidden'}`}>
+                ${isMenuOpen ? 'block w-full bg-minha-cor-1': 'hidden'}`}>
 
                 <ul className="flex flex-col md:flex-row gap-6">
                     {navItems.map(({ to, label, icon }) => (
