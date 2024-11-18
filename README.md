@@ -2,7 +2,7 @@
 
 ## Plataforma de Otimização de Consumo Energético
 
-Este é um projeto desenvolvido para demonstrar uma plataforma de otimização de consumo energético em edifícios residenciais e comerciais utilizando **IoT** e **Machine Learning**. A plataforma permite o monitoramento em tempo real do consumo de energia, proporcionando insights inteligentes para otimização.
+Este é um projeto desenvolvido na GS para demonstrar uma plataforma de otimização de consumo energético em edifícios residenciais e comerciais utilizando **IoT** e **Machine Learning**. A plataforma permite o monitoramento em tempo real do consumo de energia, proporcionando insights inteligentes para otimização.
 
 ## Tecnologias Utilizadas
 
