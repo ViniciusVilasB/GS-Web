@@ -1,0 +1,18 @@
+[
+    {
+      "title": "Empresa XYZ",
+      "description": "Reduziu seu consumo energético em 25% com nossa plataforma, economizando R$ 50.000 anualmente.",
+      "imageUrl": "empresa-xyz.jpg"
+    },
+    {
+      "title": "Residência EcoSmart",
+      "description": "A  EcoSmart otimizou o uso de energia, alcançando uma economia de 40% nas contas de luz.",
+      "imageUrl": "residencia-eco.jpg"
+    },
+    {
+      "title": "Shopping Center Green",
+      "description": "O Shopping Center Green implementou nossa solução e agora reduz os custos energéticos em até 30%.",
+      "imageUrl": "shopping-green.jpg"
+    }
+  ]
+  

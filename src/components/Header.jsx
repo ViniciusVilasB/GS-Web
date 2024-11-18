@@ -11,6 +11,8 @@ export default function Header(){
 
     const navItems = [
         { to: '/', label: 'Home'},
+        { to: '/team', label: 'Equipe'},
+        { to: '/test-it-yourself', label: 'Teste você mesmo!'},
       ];
 
     return(

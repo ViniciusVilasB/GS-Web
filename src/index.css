@@ -4,9 +4,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--cor-personalizada-verde);
 }
 
 .active {
-    color: var(--cor-personalizada-dourada);
+    color: #c7d2d6;
 }
