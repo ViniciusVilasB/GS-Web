@@ -13,11 +13,11 @@ const QuemSomosNos = () => {
           <h1 className="text-2xl font-bold mb-6">Equipe do projeto EcoEnergy:</h1>
 
           <div className="text-xl">
-              <p className="font-semibold">Erik Goto</p>
-              <p>RM: 123456</p>
+              <p className="font-semibold">Erik Yuuta Goto</p>
+              <p>RM: 558076</p>
 
-              <p className="font-semibold">Guilherme</p>
-              <p>RM: 654321</p>
+              <p className="font-semibold">Guilherme Vieira Augusto</p>
+              <p>RM: 557264</p>
 
               <p className="font-semibold">Vincius Vilas Boas</p>
               <p>RM: 557843</p>
