@@ -19,7 +19,7 @@ const QuemSomosNos = () => {
               <p className="font-semibold">Guilherme Vieira Augusto</p>
               <p>RM: 557264</p>
 
-              <p className="font-semibold">Vincius Vilas Boas</p>
+              <p className="font-semibold">Vinicius Vilas Boas</p>
               <p>RM: 557843</p>
           </div>
         </div>

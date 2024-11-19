@@ -8,6 +8,7 @@ import SuccessCases from '../components/SuccessCases';
 export default function HomePage() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [isDesktop, setIsDesktop] = useState(true);
 
   const API_URL = "https://67396034a3a36b5a62ee7a69.mockapi.io/sensor-data/data";
 
@@ -46,8 +47,15 @@ export default function HomePage() {
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
+    const handleResize = () => setIsDesktop(window.innerWidth >= 720);
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   return (
@@ -74,18 +82,20 @@ export default function HomePage() {
       <p className="text-xl">Acompanhe seu desempenho de consumo ao longo do dia com gráficos dinâmicos.</p>
       
       <div className="p-4">
-        {loading ? (
-          <p>Carregando gráfico...</p>
-        ) : (
-          <animated.div style={animateGraph}>
-            <LineChart width={600} height={300} data={data}>
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="hora" />
-              <YAxis />
-              <Tooltip />
-              <Line type="monotone" dataKey="kWh" stroke="#1a2f45" animationDuration={500} />
-            </LineChart>
-          </animated.div>
+        {isDesktop && (
+          loading ? (
+            <p>Carregando gráfico...</p>
+          ) : (
+            <animated.div style={animateGraph}>
+              <LineChart width={600} height={300} data={data}>
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="hora" />
+                <YAxis />
+                <Tooltip />
+                <Line type="monotone" dataKey="kWh" stroke="#1a2f45" animationDuration={500} />
+              </LineChart>
+            </animated.div>
+          )
         )}
       </div>
 
